@@ -1,0 +1,16 @@
+/* src/components/Dashboard/Widget.module.css */
+.widget {
+  background-color: var(--color-bg-white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  height: 350px; /* Give them a consistent height */
+  display: flex;
+  flex-direction: column;
+}
+
+.widgetTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}

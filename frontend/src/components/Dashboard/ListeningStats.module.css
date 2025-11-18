@@ -1,0 +1,24 @@
+/* src/components/Dashboard/ListeningStats.module.css */
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-accent-orange);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
