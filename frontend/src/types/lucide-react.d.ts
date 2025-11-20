@@ -1,0 +1,56 @@
+declare module 'lucide-react' {
+  import * as React from 'react';
+  export type IconProps = React.SVGProps<SVGSVGElement> & { size?: number | string; className?: string; fill?: string };
+
+  export const Home: React.ComponentType<IconProps>;
+  export const Compass: React.ComponentType<IconProps>;
+  export const Heart: React.ComponentType<IconProps>;
+  export const Radio: React.ComponentType<IconProps>;
+  export const Mic2: React.ComponentType<IconProps>;
+  export const Clock: React.ComponentType<IconProps>;
+  export const Search: React.ComponentType<IconProps>;
+  export const Bell: React.ComponentType<IconProps>;
+  export const Sun: React.ComponentType<IconProps>;
+  export const Moon: React.ComponentType<IconProps>;
+  export const Play: React.ComponentType<IconProps>;
+  export const Pause: React.ComponentType<IconProps>;
+  export const SkipBack: React.ComponentType<IconProps>;
+  export const SkipForward: React.ComponentType<IconProps>;
+  export const Shuffle: React.ComponentType<IconProps>;
+  export const Repeat: React.ComponentType<IconProps>;
+  export const Volume2: React.ComponentType<IconProps>;
+  export const Volume1: React.ComponentType<IconProps>;
+  export const VolumeX: React.ComponentType<IconProps>;
+  export const Menu: React.ComponentType<IconProps>;
+  export const X: React.ComponentType<IconProps>;
+  export const TrendingUp: React.ComponentType<IconProps>;
+  export const Music: React.ComponentType<IconProps>;
+  export const History: React.ComponentType<IconProps>;
+  export const Settings: React.ComponentType<IconProps>;
+  export const LogOut: React.ComponentType<IconProps>;
+  export const User: React.ComponentType<IconProps>;
+  export const CreditCard: React.ComponentType<IconProps>;
+  export const Sparkles: React.ComponentType<IconProps>;
+  export const MoreHorizontal: React.ComponentType<IconProps>;
+  export const ListMusic: React.ComponentType<IconProps>;
+  export const Maximize2: React.ComponentType<IconProps>;
+  export const Headphones: React.ComponentType<IconProps>;
+  export const RadioReceiver: React.ComponentType<IconProps>;
+  export const Signal: React.ComponentType<IconProps>;
+  export const ChevronDown: React.ComponentType<IconProps>;
+  export const Share2: React.ComponentType<IconProps>;
+  export const Mic: React.ComponentType<IconProps>;
+  export const Check: React.ComponentType<IconProps>;
+  export const Trash2: React.ComponentType<IconProps>;
+  export const Disc: React.ComponentType<IconProps>;
+  export const Plus: React.ComponentType<IconProps>;
+  export const ListPlus: React.ComponentType<IconProps>;
+  export const FolderPlus: React.ComponentType<IconProps>;
+  export const BarChart2: React.ComponentType<IconProps>;
+  export const Calendar: React.ComponentType<IconProps>;
+  export const PieChart: React.ComponentType<IconProps>;
+  export const Activity: React.ComponentType<IconProps>;
+
+  const _default: { [key: string]: React.ComponentType<any> };
+  export default _default;
+}
