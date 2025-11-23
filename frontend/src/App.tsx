@@ -152,7 +152,7 @@ const generateInitialHistory = (): PlayHistoryItem[] => {
 
 const parseDurationToMinutes = (duration: string) => {
   const [min, sec] = duration.split(':').map(Number);
-  return min + sec / 60;
+  return min + sec / 60
 };
 
 // --- Context ---
