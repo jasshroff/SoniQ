@@ -225,7 +225,7 @@ const PlayerContext = createContext<{
           </button>
           <button
             onClick={() => {
-              setActiveTab('history');
+              setActiveTab('history')
               if (window.innerWidth < 768) setIsOpen(false);
             }}
             className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${activeTab === 'history' ? 'bg-[#e88d50] text-white' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'}`}
