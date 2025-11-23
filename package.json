@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^12.6.0",
+    "react-feather": "^2.0.10"
+  }
+}
