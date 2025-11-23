@@ -5,27 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Global Styles
-import './styles/global.css';
+// import './styles/global.css'; // Removed
 
 // Components - Layout
-import Navbar from './components/Layout/Navbar';
-import Sidebar from './components/Layout/Sidebar';
+// import Navbar from './components/Layout/Navbar'; // Removed
+// import Sidebar from './components/Layout/Sidebar'; // Removed
 
 // Components - Dashboard
-import Dashboard from './components/Dashboard/Dashboard';
-import ListeningStats from './components/Dashboard/ListeningStats';
-import TopGenres from './components/Dashboard/TopGenres';
-import UserHistory from './components/Dashboard/UserHistory';
+// import Dashboard from './components/Dashboard/Dashboard'; // Removed
+// import ListeningStats from './components/Dashboard/ListeningStats'; // Removed
+// import TopGenres from './components/Dashboard/TopGenres'; // Removed
+// import UserHistory from './components/Dashboard/UserHistory'; // Removed
 
 // Components - Music
-import MusicPlayer from './components/Music/MusicPlayer';
-import Recommended from './components/Music/Recommended';
+// import MusicPlayer from './components/Music/MusicPlayer'; // Removed
+// import Recommended from './components/Music/Recommended'; // Removed
 
 // Components - Global
-import SearchBar from './components/global/SearchBar';
+// import SearchBar from './components/global/SearchBar'; // Removed
 
 // Types
-import * as Types from './types/index';
+// import * as Types from './types/index'; // Removed
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
