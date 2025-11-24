@@ -1,0 +1,50 @@
+type User @table {
+  username: String!
+  email: String!
+  createdAt: Timestamp!
+  displayName: String
+  bio: String
+  profilePictureUrl: String
+}
+
+type Artist @table {
+  name: String!
+  createdAt: Timestamp!
+  bio: String
+  genre: String
+  imageUrl: String
+}
+
+type Song @table {
+  title: String!
+  artist: Artist!
+  durationSeconds: Int!
+  createdAt: Timestamp!
+  genre: String
+  releaseYear: Int
+  album: String
+}
+
+type Rating @table(key: ["user", "song"]) {
+  user: User!
+  song: Song!
+  score: Int!
+  createdAt: Timestamp!
+  reviewText: String
+  isPublic: Boolean
+}
+
+type Playlist @table {
+  user: User!
+  name: String!
+  createdAt: Timestamp!
+  description: String
+  isPublic: Boolean
+}
+
+type PlaylistItem @table(key: ["playlist", "song"]) {
+  playlist: Playlist!
+  song: Song!
+  position: Int!
+  addedAt: Timestamp
+}

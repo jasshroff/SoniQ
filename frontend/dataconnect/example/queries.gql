@@ -1,0 +1,42 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: {
+    username_expr: "auth.uid"
+    email: "example@example.com"
+    createdAt_expr: "request.time"
+    displayName: "Example User"
+  })
+}
+
+query GetSongs @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public") {
+  songs {
+    id
+    title
+    artist {
+      name
+    }
+  }
+}
+
+mutation AddSongToPlaylist($playlistId: UUID!, $songId: UUID!, $position: Int!) @auth(level: USER) {
+  playlistItem_insert(data: {
+    playlistId: $playlistId
+    songId: $songId
+    position: $position
+  })
+}
+
+query GetMyPlaylists @auth(level: USER) {
+  playlists(where: {userId: {eq_expr: "auth.uid"}}) {
+    id
+    name
+    description
+    isPublic
+    songs_via_PlaylistItem {
+      id
+      title
+      artist {
+        name
+      }
+    }
+  }
+}
